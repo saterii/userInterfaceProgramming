@@ -1,0 +1,49 @@
+
+
+#employees{
+  width: 100%;
+  margin: 0 auto;
+
+}
+.employeeContainer{
+  display:block;
+  max-width:25%;
+  float: left;
+  width: 22.5%;
+  border: 1px solid black;
+  margin: 1em;
+  text-align: center;
+  border-radius: 1em;
+  background-color: white;
+}
+img{
+  margin-top: 0.5em;
+  border-radius: 50%;
+  
+}
+p{
+  margin-bottom: 0.25em;
+  margin-top: 0;
+}
+.phone{
+  margin-bottom: 1em;
+}
+.name{
+  margin-top: 1em;
+  font-weight: bold;
+}
+.contact{
+  font-weight: bold;
+  margin-top: 1em;
+}
+h1{
+  text-align: center;
+  width: 90.7%;
+  background-color: black;
+  color: white;
+  padding: 1em;
+  letter-spacing: 1.5px;
+  margin: 0 auto;
+  border-radius: 1em 1em 0 0;
+  margin-bottom: 0;
+}
