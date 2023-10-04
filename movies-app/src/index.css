@@ -11,3 +11,40 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+.movieBox{
+  margin: 1em;
+  padding: 1em;
+  text-align: center;
+  border-radius: 1em;
+  border: 1px solid black;
+}
+
+.movieBox img{
+  width: 35%;
+  height: auto;
+}
+
+.Movies{
+  margin: 1em;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+img{
+  height: 20em;
+}
+.title{
+  font-weight: bold;
+}
+.desc{
+  text-align: justify;
+  margin-left: 1em;
+  margin-right: 1em
+}
+.videoLink{
+  color:blue;
+  display: inline;
+}
+.videoLink:hover{
+  text-decoration: underline;
+  cursor: pointer;;
+}
