@@ -2,6 +2,12 @@ import './App.css';
 import React, { useState, useEffect } from 'react';
 import axios from 'axios'
 import YouTube from 'react-youtube';
+import ReactDOM from 'react-dom';
+import Modal from 'react-modal';
+
+Modal.setAppElement("#root")
+
+
 
 
 function MovieList() {
@@ -62,13 +68,24 @@ function MovieListItem(props) {
     }
 
     // MAKE THIS FUNCTION PLAY A VIDEO
+    const [modalIsOpen, setIsOpen] = React.useState(false);
+    const [videoLink, setVideoLink] = React.useState();
 
-    function videoPressed(link){
-      console.log(link)
+    function closeModal() {
+      setIsOpen(false);
     }
+    function videoPressed(link){
+      setVideoLink(link)
+      setIsOpen(true);
+      return(
+        <div>
+          <YouTube videoId={link}></YouTube>
+        </div>
+      )
+    }  
+
 
     var videos = []
-    var video = "";
      if (movie !== undefined && movie.videos !== undefined && movie.videos.results !== undefined) {
       for (var i=0;i<movie.videos.results.length;i++){
         let link = movie.videos.results[i].key
@@ -78,7 +95,19 @@ function MovieListItem(props) {
         }
       }
      }
-    
+     const videoOptions = {
+      playerVars: {
+        autoplay: 1,
+        controls: 0,
+        rel: 0,
+        showinfo: 0,
+        
+      },
+      
+      width: "100%",
+      height: 835,
+      
+    };
     return(
       <div className="movieBox">
       <img alt="poster" src={imageurl}></img>
@@ -86,6 +115,10 @@ function MovieListItem(props) {
       <p className='genres'>Genres: {genres}</p>
       <p className='desc'>{props.movie.overview}</p>
       <p className='videos'>{videos}</p>
+      <Modal isOpen={modalIsOpen} onRequestClose={closeModal}>
+        <YouTube opts={videoOptions} videoId={videoLink}></YouTube>
+      </Modal>
+      
       </div>
     )
 }
