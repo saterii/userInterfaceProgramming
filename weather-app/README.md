@@ -6,4 +6,4 @@ Initial state
 
 Forecast for Kalajoki
 
-![add items](loaded.png)  
+![add items](loaded.PNG)  
