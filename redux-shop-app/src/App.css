@@ -1,0 +1,80 @@
+.App {
+  text-align: center;
+  display: flex;
+}
+h1{
+  text-align: left;
+  margin-left: 20px;
+}
+.storeContainer{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  
+}
+.Store{
+  display: flex;
+  flex-wrap: wrap;
+  width: fit-content;
+  justify-self: center;
+  justify-content:space-around;
+  row-gap: 15px;
+}
+
+.StoreItem{
+  display: flex;
+  border: 1px solid black;
+  width: 30%;
+  box-sizing: border-box;
+  padding: 1em;
+  flex-direction: column;
+  
+}
+.itemImage{
+  height: 10em;
+  align-self: center;
+}
+.itemTitle{
+  font-weight: bold;
+}
+
+.itemButton{
+  margin-top: 2em;
+  display: flex;
+  justify-content: center;
+  align-self: center;
+  justify-self: flex-end;
+}
+.itemPrice{
+  margin-top: 0;
+  margin-bottom: 0;
+}
+.shoppingCart{
+  width: 30%;
+  border-left: 1px solid black;
+  text-align: center;
+  padding: 1em;
+}
+.shoppingCart > h1{
+  text-align: center;
+  border-bottom: 1px solid black;
+  margin-left: 0;
+  padding-bottom: 0.5em;
+}
+.cartItemImage{
+  height: 5em;
+  margin-right: 2em;
+}
+.cartItem{
+  border: 1px solid black;
+  border-radius: 2em;
+  padding: 1em;
+  margin-bottom: 1em;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+.x{
+  margin-left: 2em;
+}
