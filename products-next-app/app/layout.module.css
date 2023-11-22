@@ -1,0 +1,31 @@
+
+.header {
+    width: 100%;
+    height: fit-content;
+    background-color: rgb(78, 54, 212);
+    text-align: center;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    font-weight: bold;
+    color:white;
+    margin: 0;
+    font-family: 'Courier New', Courier, monospace;
+  }
+.header > div > div > a{
+    margin-left: 1em;
+    font-size: 1.5em;
+    text-decoration: none;
+    color: black;
+}
+.header > div > div > a:first-of-type{
+    margin-left:0;
+}
+.header > div > div > a:hover{
+    text-decoration: underline;
+}
+
+.mainheader{
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    padding: 0;
+    margin: 0;
+}

@@ -1,0 +1,57 @@
+.itemImage{
+  height: 10em;
+  align-self: center;
+}
+
+.storeContainer{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+
+.store{
+  display: flex;
+  flex-wrap: wrap;
+  width: fit-content;
+  justify-self: center;
+  justify-content:space-around;
+  row-gap: 15px;
+}
+.itemTitle{
+font-weight: bold;
+text-align: center;
+}
+.App {
+text-align: center;
+display: flex;
+}
+
+.product{
+display: flex;
+border: 1px solid black;
+width: 30%;
+box-sizing: border-box;
+padding: 1em;
+flex-direction: column;
+
+}
+.product:hover{
+  border: 2px solid black;
+}
+.productContainer{
+  padding: 1em;
+  display: flex;
+  width: 70%;
+}
+.productContainer > img{
+  width: 30%;
+  margin-right: 2em;
+}
+.productContainer > h1{
+  width: fit-content;
+}
+.title{
+  text-align: center;
+  font-size: 3em;
+}

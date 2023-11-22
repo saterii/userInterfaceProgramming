@@ -1,0 +1,13 @@
+.headertext{
+  text-align: center;
+}
+.main {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  
+}
+.main > p{
+  font-size: 2em;
+}
