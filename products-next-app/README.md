@@ -2,7 +2,7 @@
 
 Home page  
 
-![Home](homepng)  
+![Home](home.png)  
 
 About page  
 
